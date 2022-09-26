@@ -1,0 +1,120 @@
+body {
+    display :block;
+    padding : 50px;
+    background-color: #F9F4ED;
+}
+#container {
+    width : 800px;
+    margin : auto;
+    border : 2px solid black;
+}
+.title {
+    
+    display: inline-block;
+    padding : 0px 10px 0px 10px;
+    margin-left : 325px;
+    line-height: 0;
+    min-width: 0;
+    max-width: 100%;
+    border : 6px solid rgb(41, 17, 17);
+    border-radius: 10px;
+    font-size: 2em;
+   
+}
+h2 {
+    text-indent: 10%;
+}
+.h3 {
+    border-bottom: 1px solid  rgba(0,0,0,0.1);
+}
+#sam {
+    font-family: "caveat";
+}
+img {
+    width: 100%;
+}
+ul {
+    list-style-type: none;
+}
+#samphoto {
+    width: auto;
+}
+.ref {
+    text-indent: -90px;
+    text-decoration: none;
+    text-align: center;
+    color  : #444;
+    font-size : 30px;
+    font-family: "Dosis";
+    text-transform: uppercase;
+    font-weight : 100;
+    letter-spacing: 2px;
+}
+ul.main {
+    padding : 0px;
+}
+#samTitle {
+    font-family: "Dosis";
+    font-weight: 900;
+}
+.quality {
+    display : flow-root;
+    width : 100%;
+
+    text-align: center;
+    height: 20px;
+    border-radius : 10px;
+    background-color: rgb(192, 52, 52);
+    color : rgb(255, 255, 255);
+    font-family: "Bitter";
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+h1 {
+    text-align: center;
+    font-family: 'Dosis';
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+#samText {
+    text-align: center;
+    font-family: "Dosis";
+    font-size: 30px;
+    font-weight: 200;
+}
+.main > ul > li > p {
+    text-align: left;
+    font-family: "Bitter";
+    line-height: 30px;
+    font-weight: 500;
+    font-size: 20px;
+    color : rgba(0,0,0,0.1);
+}
+hr {
+    background-color: rgb(192, 52, 52);
+    border : 10px solid rgb(192, 52, 52);
+    border-radius: 5px;
+    width: 30%;
+}
+.top {
+    border-top: 1px solid  rgba(0,0,0,0.1);
+}
+
+/*
+li {
+    
+    border-bottom: 1px solid  rgba(0,0,0,0.1);
+}  */
+aside > nav > ul > li > a {
+    text-decoration: none;
+    text-align: center;
+    color  : #444;
+    font-size : 30px;
+    font-family: "Dosis";
+    text-transform: uppercase;
+    font-weight : 100;
+    letter-spacing: 2px;
+}
