@@ -2,32 +2,32 @@ container {
  display : float; 
  border : 2px solid black;
 	}
-nav cls { 
+nav .cls { 
  display : float; 
  width : 100px; 
  border : 2px solid black;
 	}
-#1{ height : 59px; width : 100px; flex-basis : 100}
-#2{ height : 143px; width : 100px; flex-basis : 100}
-#3{ height : 157px; width : 100px; flex-basis : 100}
-#4{ height : 59px; width : 100px; flex-basis : 100}
-#5{ height : 35px; width : 100px; flex-basis : 100}
-#6{ height : 143px; width : 100px; flex-basis : 100}
-#7{ height : 75px; width : 100px; flex-basis : 100}
-#8{ height : 35px; width : 100px; flex-basis : 100}
-#9{ height : 143px; width : 100px; flex-basis : 100}
-#10{ height : 85px; width : 100px; flex-basis : 100}
-#11{ height : 140px; width : 100px; flex-basis : 100}
-#12{ height : 110px; width : 100px; flex-basis : 100}
-#13{ height : 100px; width : 100px; flex-basis : 100}
-#14{ height : 200px; width : 100px; flex-basis : 100}
-#15{ height : 190px; width : 100px; flex-basis : 100}
-#16{ height : 130px; width : 100px; flex-basis : 100}
-#17{ height : 200px; width : 100px; flex-basis : 100}
-#18{ height : 50px; width : 100px; flex-basis : 100}
-#19{ height : 180px; width : 100px; flex-basis : 100}
-#20{ height : 65px; width : 100px; flex-basis : 100}
-#21{ height : 120px; width : 100px; flex-basis : 100}
-#22{ height : 60px; width : 100px; flex-basis : 100}
-#23{ height : 110px; width : 100px; flex-basis : 100}
-#24{ height : 120px; width : 100px; flex-basis : 100}
+#col1{ height : 59px; width : 100px; flex-basis : 100}
+#col2{ height : 143px; width : 100px; flex-basis : 100}
+#col3{ height : 157px; width : 100px; flex-basis : 100}
+#col4{ height : 59px; width : 100px; flex-basis : 100}
+#col5{ height : 35px; width : 100px; flex-basis : 100}
+#col6{ height : 143px; width : 100px; flex-basis : 100}
+#col7{ height : 75px; width : 100px; flex-basis : 100}
+#col8{ height : 35px; width : 100px; flex-basis : 100}
+#col9{ height : 143px; width : 100px; flex-basis : 100}
+#col10{ height : 85px; width : 100px; flex-basis : 100}
+#col11{ height : 140px; width : 100px; flex-basis : 100}
+#col12{ height : 110px; width : 100px; flex-basis : 100}
+#col13{ height : 100px; width : 100px; flex-basis : 100}
+#col14{ height : 200px; width : 100px; flex-basis : 100}
+#col15{ height : 190px; width : 100px; flex-basis : 100}
+#col16{ height : 130px; width : 100px; flex-basis : 100}
+#col17{ height : 200px; width : 100px; flex-basis : 100}
+#col18{ height : 50px; width : 100px; flex-basis : 100}
+#col19{ height : 180px; width : 100px; flex-basis : 100}
+#col20{ height : 65px; width : 100px; flex-basis : 100}
+#col21{ height : 120px; width : 100px; flex-basis : 100}
+#col22{ height : 60px; width : 100px; flex-basis : 100}
+#col23{ height : 110px; width : 100px; flex-basis : 100}
+#col24{ height : 120px; width : 100px; flex-basis : 100}

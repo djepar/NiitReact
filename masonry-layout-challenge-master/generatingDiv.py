@@ -8,12 +8,12 @@ boxHtml.write("<div id='container'>\n")
 for i in range(1,25):
     if (i-1) % 4 == 0:
         counter += 1
-        boxHtml.write("<nav>\n")
-        boxHtml.write("\t<div class='cls col{}' id='{}'>{}</div>\n".format(counter,i, i))
+        boxHtml.write("<div class='cls col'>\n")
+        boxHtml.write("\t<nav class='cls col{}' id='{}'>{}</nav>\n".format(counter,i, i))
     else:
-        boxHtml.write("\t<div class='cls col{}' id='{}'>{}</div>\n".format(counter,i, i))
+        boxHtml.write("\t<nav class='cls col{}' id='{}'>{}</nav>\n".format(counter,i, i))
     if (i-1) % 4 == 3:
-        boxHtml.write("</nav>\n")
+        boxHtml.write("</div>\n")
 boxHtml.write("</div>")
 boxHtml.close()
 
