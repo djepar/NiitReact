@@ -22,5 +22,5 @@ boxCSS.write("container { \n display : float; \n border : 2px solid black;\n\t}\
 boxCSS.write("nav .cls { \n display : float; \n width : 100px; \n border : 2px solid black;\n\t}\n")
 
 for i in range(1,25):
-    boxCSS.write("#col{}".format(i) + "{ height : " + "{}px; width : 100px; flex-basis : 100".format(listHeight[i-1]) + "}\n")
+    boxCSS.write("#col{}".format(i) + "{ height : " + "{}px; ".format(listHeight[i-1]) + "}\n")
 boxCSS.close()

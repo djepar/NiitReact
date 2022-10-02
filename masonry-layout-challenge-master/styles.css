@@ -1,39 +1,43 @@
-#container { 
+body { 
     display : flex; 
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
+    align-items: stretch;
+    background-color: #CB4154;
     border : 2px solid black;
 }
 
-nav .cls { 
-    width : 100px;
-    margin : 5px;
+
+.col > .cls {
+    background-color: #3d1e37;
+    border : 2px solid blue;
+    color : white;
+    margin : 3px;
+    font-size: 20px;
+    display: flex;
     align-content: center;
-    border : 4px solid black;
-    align-content: center;
+    align-items: center;
+    padding-left: 40%;
 }
-#col1{ height : 59px; width : 100px; flex-basis : 100px}
-#col2{ height : 143px; width : 100px; flex-basis : 100px}
-#col3{ height : 157px; width : 100px; flex-basis : 100px}
-#col4{ height : 59px; width : 100px; flex-basis : 100px}
-#col5{ height : 35px; width : 100px; flex-basis : 100px}
-#col6{ height : 143px; width : 100px; flex-basis : 100px}
-#col7{ height : 75px; width : 100px; flex-basis : 100px}
-#col8{ height : 35px; width : 100px; flex-basis : 100px}
-#col9{ height : 143px; width : 100px; flex-basis : 100px}
-#col10{ height : 85px; width : 100px; flex-basis : 100px}
-#col11{ height : 140px; width : 100px; flex-basis : 100px}
-#col12{ height : 110px; width : 100px; flex-basis : 100px}
-#col13{ height : 100px; width : 100px; flex-basis : 100px}
-#col14{ height : 200px; width : 100px; flex-basis : 100px}
-#col15{ height : 190px; width : 100px; flex-basis : 100px}
-#col16{ height : 130px; width : 100px; flex-basis : 100px}
-#col17{ height : 200px; width : 100px; flex-basis : 100px}
-#col18{ height : 50px; width : 100px; flex-basis : 100px}
-#col19{ height : 180px; width : 100px; flex-basis : 100px}
-#col20{ height : 65px; width : 100px; flex-basis : 100px}
-#col21{ height : 120px; width : 100px; flex-basis : 100px}
-#col22{ height : 60px; width : 100px; flex-basis : 100px}
-#col23{ height : 110px; width : 100px; flex-basis : 100px}
-#col24{ height : 120px; width : 100px; flex-basis : 100px}
+#col1{ height : 59px; }
+#col2{ height : 143px; }
+#col3{ height : 157px; }
+#col4{ height : 59px; }
+#col5{ height : 35px; }
+#col6{ height : 143px; }
+#col7{ height : 75px; }
+#col8{ height : 35px; }
+#col9{ height : 143px; }
+#col10{ height : 85px; }
+#col11{ height : 140px; }
+#col12{ height : 110px; }
+#col13{ height : 100px; }
+#col14{ height : 200px; }
+#col15{ height : 190px; }
+#col16{ height : 130px; }
+#col17{ height : 200px; }
+#col18{ height : 50px; }
+#col19{ height : 180px; }
+#col20{ height : 65px; }
+#col21{ height : 120px; }
+#col22{ height : 60px; }
+#col23{ height : 110px; }
+#col24{ height : 120px; }
