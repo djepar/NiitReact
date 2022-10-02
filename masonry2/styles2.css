@@ -1,0 +1,34 @@
+#container {
+    background-color : red;
+    display : flex;
+}
+
+.cls {
+    border : 2px solid black;
+    width : 100px;
+}
+
+#row1{ height : 59px; }
+#row2{ height : 143px; }
+#row3{ height : 157px; }
+#row4{ height : 59px; }
+#row5{ height : 35px; }
+#row6{ height : 143px; }
+#row7{ height : 75px; }
+#row8{ height : 35px; }
+#row9{ height : 143px; }
+#row10{ height : 85px; }
+#row11{ height : 140px; }
+#row12{ height : 110px; }
+#row13{ height : 100px; }
+#row14{ height : 200px; }
+#row15{ height : 190px; }
+#row16{ height : 130px; }
+#row17{ height : 200px; }
+#row18{ height : 50px; }
+#row19{ height : 180px; }
+#row20{ height : 65px; }
+#row21{ height : 120px; }
+#row22{ height : 60px; }
+#row23{ height : 110px; }
+#row24{ height : 120px; }

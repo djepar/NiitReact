@@ -1,0 +1,51 @@
+.flex-container { 
+    display : float; 
+    clear : both;
+    align-items: stretch;
+    background-color: #CB4154;
+    border : 2px solid black;
+}
+
+
+.flex-container > .cls {
+    background-color: #3d1e37;
+    border : 2px solid blue;
+    color : white;
+    width: 100px;
+    margin : 3px;
+    font-size: 20px;
+    display: float;
+
+    align-content: center;
+    align-items: center;
+    padding-left: 40%;
+}
+
+.col > .cls {
+    align-items: center;
+    display : float;
+}
+#col1{ height : 59px; }
+#col2{ height : 143px; }
+#col3{ height : 157px; }
+#col4{ height : 59px; }
+#col5{ height : 35px; }
+#col6{ height : 143px; }
+#col7{ height : 75px; }
+#col8{ height : 35px; }
+#col9{ height : 143px; }
+#col10{ height : 85px; }
+#col11{ height : 140px; }
+#col12{ height : 110px; }
+#col13{ height : 100px; }
+#col14{ height : 200px; }
+#col15{ height : 190px; }
+#col16{ height : 130px; }
+#col17{ height : 200px; }
+#col18{ height : 50px; }
+#col19{ height : 180px; }
+#col20{ height : 65px; }
+#col21{ height : 120px; }
+#col22{ height : 60px; }
+#col23{ height : 110px; }
+#col24{ height : 120px; }
