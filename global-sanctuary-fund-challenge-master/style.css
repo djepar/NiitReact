@@ -1,0 +1,69 @@
+nav > img {
+    width : 70px;
+    height : 70px;
+    margin : 10px;
+}
+.container {
+    display : grid;
+    grid-template-columns : fr; 
+    grid-template-rows: 0.4fr, 0.8fr, 0.8fr, 2fr, 1fr, 1fr;
+    grid-template-areas: 
+        "nav"
+        "banner"
+        "mission"
+        "images"
+        "sct-end"
+        "footer"
+    ;
+}
+h1 {
+    text-transform: uppercase;
+}
+.container > * {
+    border : 1px solid black;
+}
+nav {
+    display : flex;
+    grid-area: nav;
+    background-color: #090909;
+}
+nav > ul > li {
+    display : inline-block;
+
+}
+a {
+    color : #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+#banner {
+    grid-area : banner;
+    height: 600px;
+    background : url("./assets/people-together-shorter.jpg");
+    background-repeat : no-repeat;
+    background-size: auto 600px;
+    color : #FFFFFF;
+}
+#sct-mission{
+    grid-area : mission;
+    background: green;
+}
+#sct-images{
+    grid-area : images;
+    background-color : blueviolet;
+}
+#stc-end{
+    grid-area : sct-end;
+    background-color: aqua;
+}
+footer{
+    grid-area: footer;
+    background-color: black;
+}
+
+button {
+    background-color: red;
+    border : none;
+    margin: 10px 
+}
