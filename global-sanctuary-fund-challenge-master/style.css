@@ -23,13 +23,31 @@ h1 {
     border : 1px solid black;
 }
 nav {
+    justify-content: space-between;
     display : flex;
     grid-area: nav;
     background-color: #090909;
+    align-items: center;
+}
+#nav-involve {
+    margin : 10px;
 }
 nav > ul > li {
     display : inline-block;
+    padding: 10px;
 
+}
+#nav-left > ul > li{
+    float: left;
+}
+#nav-link {
+    float: right;
+}
+#nav-left > button {
+    padding : 20px;
+}
+#nav-donate {
+    background-color : #DE3831;
 }
 a {
     color : #FFFFFF;
@@ -47,8 +65,22 @@ a {
 }
 #sct-mission{
     grid-area : mission;
-    background: green;
+    
 }
+.mission-goal {
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    
+}
+#mission-goal > div{
+    display : inline-block;
+}
+#mission-goal > img{
+    border-radius: 25px;
+}
+
 #sct-images{
     grid-area : images;
     background-color : blueviolet;
@@ -63,7 +95,9 @@ footer{
 }
 
 button {
-    background-color: red;
+    background-color: #D55C19;
     border : none;
-    margin: 10px 
+    margin: 10px;
+    height : 40px;
+    width: 80px;
 }
