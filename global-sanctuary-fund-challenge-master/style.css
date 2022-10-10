@@ -65,7 +65,56 @@ a {
 }
 #sct-mission{
     grid-area : mission;
-    
+}
+#sct-images{
+    display : grid;
+    grid-template-columns: repeat(1fr, 4);
+    grid-template-rows: repeat(1fr, 3), 0.4fr, 1fr;
+    grid-template-areas: 
+        "polar-bear foxes mountain-valley mountain-valley"
+        "binocs binocs peoples sun-forest-people"
+        "calendar calendar honeybees honeybees"
+        "helping helping helping helping"
+        "turtle turtle shutterstock shutterstock"
+    ;
+}
+#sct-images > img{
+    width: auto;
+    margin : 0;
+    padding: 0;
+}
+#polar-bear {
+    grid-area : polar-bear;
+}
+#foxes{
+    grid-area: foxes;
+}
+#mountain-valley{
+    grid-area: mountain-valley;
+}
+#binocs{
+    grid-area: binocs;
+}
+#peoples{
+    grid-area: peoples;
+}
+#sun-forest-people{
+    grid-area: sun-forest-people;
+}
+#calendar{
+    grid-area: calendar;
+}
+#honeybees {
+    grid-area : honeybees;
+}
+#helping {
+    grid-area : helping;
+}
+#turtle{
+    grid-area: turtle;
+}
+#shutterstock{
+    grid-area: shutterstock;
 }
 .mission-goal {
     display: flex;
@@ -74,11 +123,11 @@ a {
     align-items: center;
     
 }
-#mission-goal > div{
+.mission-goal > div{
     display : inline-block;
 }
-#mission-goal > img{
-    border-radius: 25px;
+.mission-goal img{
+    border-radius: 50px;
 }
 
 #sct-images{
@@ -101,3 +150,4 @@ button {
     height : 40px;
     width: 80px;
 }
+
