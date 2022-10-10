@@ -60,7 +60,7 @@ a {
     height: 600px;
     background : url("./assets/people-together-shorter.jpg");
     background-repeat : no-repeat;
-    background-size: auto 600px;
+    background-size: 100%;
     color : #FFFFFF;
 }
 #sct-mission{
@@ -79,7 +79,8 @@ a {
     ;
 }
 #sct-images > img{
-    width: auto;
+    /*find a better solution */
+    width: 100%;
     margin : 0;
     padding: 0;
 }
