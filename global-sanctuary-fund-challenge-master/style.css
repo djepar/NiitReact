@@ -145,10 +145,12 @@ footer{
 }
 
 button {
+    text-transform: uppercase;
     background-color: #D55C19;
     border : none;
     margin: 10px;
     height : 40px;
     width: 80px;
 }
+
 
