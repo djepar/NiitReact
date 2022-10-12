@@ -152,5 +152,43 @@ button {
     height : 40px;
     width: 80px;
 }
+ul {
+    list-style: none;
+    padding-left: 0rem;
+    padding : 0;
+    margin : 0;
+    padding-bottom : 2rem;
+}
+#white > img {
+    width : 6rem;
+}
 
-
+a > img {
+    width : 2rem;
+}
+#white {
+    background-color : white;
+}
+#login {
+    margin-top: 0.7rem;
+    float : right;
+}
+hr{
+    background-color : white;
+    height : 0.1rem;
+    border : none;
+    display : block;
+  
+   
+}
+h3{
+    color : white;
+    padding : 0px;
+    margin: 0px;
+    text-transform: uppercase;
+}
+#black-bottom{
+    margin-top : 3rem;
+    margin-right : 3rem;
+    margin-left : 3rem;
+}
