@@ -57,16 +57,22 @@ a {
 }
 #banner {
     grid-area : banner;
-    height: 600px;
-    background : url("./assets/people-together-shorter.jpg");
-    background-repeat : no-repeat;
-    background-size: 100%;
-    color : #FFFFFF;
 }
+#banner > img{
+    height: 600px;
+}
+#banner > h1{
+    position :absolute;
+    font-size : 3.1rem;
+}
+
 #sct-mission{
     grid-area : mission;
+    
+    background-color: #F6F5F2;
 }
 #sct-images{
+    grid-area : images;
     display : grid;
     grid-template-columns: repeat(1fr, 4);
     grid-template-rows: repeat(1fr, 3), 0.4fr, 1fr;
@@ -131,13 +137,8 @@ a {
     border-radius: 50px;
 }
 
-#sct-images{
-    grid-area : images;
-    background-color : blueviolet;
-}
 #stc-end{
     grid-area : sct-end;
-    background-color: aqua;
 }
 footer{
     grid-area: footer;
@@ -170,8 +171,7 @@ a > img {
     background-color : white;
 }
 #login {
-    margin-top: 0.7rem;
-    float : right;
+   margin: 1rem 0rem 0rem 90rem;
 }
 hr{
     background-color : white;
