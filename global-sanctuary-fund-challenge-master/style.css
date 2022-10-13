@@ -60,16 +60,26 @@ a {
 }
 #banner > img{
     height: 600px;
+    position : absolute;
 }
 #banner > h1{
     position :absolute;
     font-size : 3.1rem;
+    text-align: center;
+    margin-top: 20rem;
 }
 
 #sct-mission{
     grid-area : mission;
-    
+    margin-top: 38rem;
     background-color: #F6F5F2;
+}
+#sct-mission > h2{
+    text-align: center;
+    border-top : solid black;
+    border-bottom: solid black;
+    margin-left: 40rem;
+    margin-right: 40rem;
 }
 #sct-images{
     grid-area : images;
@@ -130,6 +140,13 @@ a {
     align-items: center;
     
 }
+#helping {
+    text-align: center;
+    border-top : solid black;
+    border-bottom: solid black;
+    margin-left: 40rem;
+    margin-right: 40rem;
+}
 .mission-goal > div{
     display : inline-block;
 }
@@ -161,7 +178,13 @@ ul {
     padding-bottom : 2rem;
 }
 #white > img {
-    width : 6rem;
+    width : 7rem;
+    height : 5rem;
+    display: flex;
+}
+#white > * {
+    width: max-content;
+    justify-content: space-between;
 }
 
 a > img {
@@ -169,6 +192,9 @@ a > img {
 }
 #white {
     background-color : white;
+    display : flex;
+    overflow: auto;
+    
 }
 #login {
    margin: 1rem 0rem 0rem 90rem;
