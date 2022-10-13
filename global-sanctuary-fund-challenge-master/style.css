@@ -93,10 +93,11 @@ a {
         "helping helping helping helping"
         "turtle turtle shutterstock shutterstock"
     ;
+    justify-content:center;
 }
 #sct-images > img{
     /*find a better solution */
-    width: 100%;
+    width: auto;
     margin : 0;
     padding: 0;
 }
@@ -217,4 +218,26 @@ h3{
     margin-top : 3rem;
     margin-right : 3rem;
     margin-left : 3rem;
+}
+#connect > ul > li {
+    display : inline-flex;
+}
+#footer-nav {
+    background-color: white;
+
+
+}
+
+
+#footer-nav > ul >  {
+    color : black;
+    display : flex;
+}
+#footer-nav > ul > li >a {
+    color : black;
+    display : inline-flex;
+}
+#footer-nav > ul{
+    display : flex;
+    justify-content: space-around;
 }
