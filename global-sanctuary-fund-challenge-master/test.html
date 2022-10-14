@@ -10,8 +10,7 @@
             color : red;
         }
         #bonjour{
-            float : left;
-
+            float : right;
             border: 1px solid black;
             width : 100px;
             height: 100px;
@@ -21,12 +20,14 @@
             color : initial;
         }
         #salut{
-            float : right;
             background : blue;
             border: 1px solid black;
             width : 100px;
             height: 100px;
 
+        }
+        div ~ p {
+            background-color: blueviolet;
         }
     </style>
 </head>
@@ -34,8 +35,16 @@
     <div id="bonjour">
         <div>
             <p>Bonjour</p>
+            <p>salut</p>
+            <p>kijiji</p>
         </div>
+        <p>Bonjour</p>
+        <p>salut</p>
+        <p>kijiji</p>
     </div>
+    <ul type="1">
+        <li>saljd</li>
+    </ul>
     <div id="salut"></div>
 </body>
 </html>
