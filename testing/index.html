@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .col {
+            display: block;
+            float: left;
+            margin: 1% 0 1% 1%;
+            padding : 8px;
+        }
+        .span_1_of_3{
+            width: 30%;
+            border-right : 1px solid beige;
+
+        }
+
+        .span_2_of_3{
+            width: 30%;
+            border-right : 1px solid beige;
+
+        }
+        .span_3_of_3{
+            width: 30%;
+            border-right : 1px solid beige;
+
+        }
+        @media screen and (max-width: 760px) {
+            .span_1_of_3{
+            width: 96%
+        }
+
+        .span_2_of_3{
+            width: 46.2%;
+        }
+        .span_3_of_3{
+            width: 46.2%
+        }
+        }
+        @media screen and (max-width: 460px) {
+            .span_1_of_3, .span_2_of_3, .span_3_of_3{
+            width: 96%
+        }
+
+        }
+</style>
+</head>
+<body>
+    <div class="section group">
+        <div class="col span_1_of_3">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, necessitatibus esse vel obcaecati sit eaque dolorum et, odio aperiam culpa ipsum blanditiis quam quisquam harum. Optio vitae qui quia excepturi.
+        </div>
+        <div class="col span_2_of_3">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, necessitatibus esse vel obcaecati sit eaque dolorum et, odio aperiam culpa ipsum blanditiis quam quisquam harum. Optio vitae qui quia excepturi.
+        </div>
+        <div class="col span_3_of_3">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, necessitatibus esse vel obcaecati sit eaque dolorum et, odio aperiam culpa ipsum blanditiis quam quisquam harum. Optio vitae qui quia excepturi.
+        </div>
+    </div>
+</body>
+</html>
