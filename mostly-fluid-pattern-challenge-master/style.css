@@ -1,0 +1,44 @@
+#container {
+    display : grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1.2fr 1fr;
+    grid-template-areas: 
+    "first first first first second second"
+    "third third fourth fourth fifth fifth";
+}
+#container *{
+    height: 10rem;
+}
+#first {
+    grid-area: first;
+    background-color: #003476;
+}
+#second{
+    grid-area: second;
+    background-color: #0062D2;
+}
+#third{
+    grid-area: third;
+    background-color: #B4D2F7;
+}
+#fourth{
+    grid-area: fourth;
+    background-color: #D5DFEF;
+}
+#fifth{
+    grid-area: fifth;
+    background-color: #DFE1E5;
+}
+@media screen and (max-width: 600px) {
+    #container {
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "first"
+        "second"
+        "third"
+        "fourth"
+        "fifth";
+    }
+  
+}
