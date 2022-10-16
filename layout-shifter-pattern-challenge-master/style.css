@@ -12,10 +12,11 @@
   }
   nav  {
     display : float;
-
+    padding : 10px;
   }
   nav * {
     display : inline;
+
   }
   /* Style navigation menu links */
   nav a {
@@ -71,10 +72,6 @@
     "vaccine"
     "rail";
   }
-  nav links {
-    display: block;
-  }
-
   nav a.icon {
     background: black;
     display: block;
@@ -82,4 +79,9 @@
     right: 0;
     top: 0;
   }
+  nav * {
+    display: block;
+  }
+
+  
 }
