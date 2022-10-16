@@ -7,36 +7,42 @@
   *{
     font-family: Arial, Helvetica, sans-serif;
   }
-  nav links {
-    display: none;
+  nav .icon {
+    display : none;
   }
-  
+  nav  {
+    display : float;
+
+  }
+  nav * {
+    display : inline;
+  }
   /* Style navigation menu links */
   nav a {
     color: white;
     padding: 10px 12px;
     text-decoration: none;
     font-size: 1rem;
-    display: block;
   }
   nav li {
     list-style-type: none;
   }
   
-  .nav a.icon {
-    background: black;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
+
   
   /* Add a grey background color on mouse-over */
   nav a:hover {
     background-color: #ddd;
     color: black;
   }
-  
+  main {
+    display : grid;
+    grid-template-columns: 1.5fr 3fr ;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "space vaccine  "
+    "space rail  ";
+  }
   /* Style the active link (or home/logo) */
   .active {
     background-color: #04AA6D;
@@ -47,3 +53,33 @@
     margin : 10px;
     padding : 10px;
   }
+  #space {
+    grid-area : space;
+  }
+  #vaccine {
+    grid-area: vaccine;
+  }
+  #rail {
+    grid-area : rail
+  }
+@media screen and (max-width : 600px){
+  main {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "space"
+    "vaccine"
+    "rail";
+  }
+  nav links {
+    display: block;
+  }
+
+  nav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
