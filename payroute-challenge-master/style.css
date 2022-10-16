@@ -1,0 +1,7 @@
+nav {
+    display : float;
+}
+nav * {
+    display : inline-block;
+
+}
