@@ -1,7 +1,19 @@
 nav {
-    display : float;
+    display : flex;
+    justify-content: space-evenly;
+}
+#logo {
+    size: 100rem;
 }
 nav * {
     display : inline-block;
-
+    
+}
+nav > ul > li {
+    display : inline-block;
+}
+nav > ul > li > a {
+    text-decoration: none;
+    color : black;
+    
 }
