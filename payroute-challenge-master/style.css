@@ -1,13 +1,18 @@
+* {margin: 0;
+    padding: 0;}
 nav {
     display : flex;
     justify-content: space-evenly;
+}
+h2 {
+    font-size: 3rem;
+    color: #ffffff
 }
 #logo {
     size: 100rem;
 }
 nav * {
     display : inline-block;
-    
 }
 nav > ul > li {
     display : inline-block;
@@ -16,4 +21,26 @@ nav > ul > li > a {
     text-decoration: none;
     color : black;
     
+}
+#hero {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+}
+#hero > video{
+    width : 100%;
+}
+#hero > h2{
+    position: absolute;
+    top: 15%;
+    text-align: center;
+}
+#hero > button {
+    position: absolute;
+    top: 20%;
+    text-align: center;
+}
+
+
+@media screen and (max-width : 597px) {
 }
