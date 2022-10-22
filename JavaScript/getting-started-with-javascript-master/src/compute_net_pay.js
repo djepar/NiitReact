@@ -31,7 +31,7 @@ module.exports = function calculateNetPayable(pricePerKilo, quantityInKilo, disc
 //   else {
 //     return (pricePerKilo * quantityInKilo) * discountPercentage
 //   }
-// }
-console.log(calculateNetPayable("allo", "bonjour", 0.10))
+// // }
+// console.log(calculateNetPayable("allo", "bonjour", 0.10))
 
-console.log(calculateNetPayable(1, 2, 0.10))
+// console.log(calculateNetPayable(1, 2, 0.10))

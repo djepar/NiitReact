@@ -14,7 +14,7 @@ for any non-numeric value passed to the function.
 
 module.exports = function generateRandomNumber(min, max) {
   console.log(typeof min, typeof max)
-  if (min > max){
+  if (min >= max){
     return 'Incorrect Inputs. 1st value should be less than the second';
   }   
   else if(typeof min !== "number" || typeof max !== "number"){
