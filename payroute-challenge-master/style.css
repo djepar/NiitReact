@@ -3,6 +3,8 @@
 nav {
     display : flex;
     justify-content: space-evenly;
+    
+    height : 10vh;
 }
 h2 {
     font-size: 3rem;
@@ -20,15 +22,28 @@ nav > ul > li {
 nav > ul > li > a {
     text-decoration: none;
     color : black;
+    text-transform: uppercase;
+    padding : 2rem;
     
+}
+nav > picture {
+    width: 100px;
+}
+nav > button {
+    width : 6rem;
+    height: 0.8rem;
+    margin : auto;
+    padding : 1.5rem;
+    text-align: center;
 }
 #hero {
     position: relative;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 }
 #hero > video{
     width : 100%;
+    height: auto;
 }
 #hero > h2{
     position: absolute;

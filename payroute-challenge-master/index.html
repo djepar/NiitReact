@@ -9,16 +9,12 @@
 </head>
 <body>
     <nav>
-        <img id="logo" srcset="
-        ./assets/PayRoute_Logo_1.png 660w,
-        ./assets/PayRoute_Logo.png 800w"
-        sizes="(min-width : 597px) 150px, 200px"
-        
-        src="./assets/PayRoute_Logo_1.png"alt="logo">
-      <!-- <picture>
-            <source media="(min-width:1200)" srcset="./assets/PayRoute_Logo.png">
-        <img src="./assets/PayRoute_Logo_1.png"alt="logo">
-        </picture> -->
+        <picture>
+                <source media="(max-width:799px)" srcset="./assets/PayRoute_Logo_1.png 400w" sizes="40px">
+                <source media="(min-width:800px)" srcset="./assets/PayRoute_Logo.png 800w" sizes="60px">
+                <img src="./assets/PayRoute_Logo_1.png"alt="logo">
+        </picture>
+    
         <ul>
             <li><a href="#">Individual</a></li>
             <li><a href="#">Business</a></li>
