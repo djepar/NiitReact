@@ -62,8 +62,8 @@ function drawPattern(numberRow) {
         structure += " "
         j++;
         }
-        structure += GenStar(i) + ".\n"
-      }
+        structure = structure.slice(0, structure.length) + GenStar(i) + ".\n"
+      } 
       return structure
     }
 
