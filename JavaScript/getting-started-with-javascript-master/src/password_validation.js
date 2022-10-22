@@ -19,7 +19,7 @@ module.exports = function checkPassword(password) {
   return exp.test(password);
 }
 // function checkPassword(password) {
-//   let exp = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})");
+//   let exp = new RegExp(/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/);
 //   return exp.test(password);
 // }
 // console.log(checkPassword("Bonjour!#3"));
@@ -27,7 +27,7 @@ module.exports = function checkPassword(password) {
 // console.log(checkPassword("Bonjour!#3FDFFFFFFFFFFFFFFFFFFFFFFFFFF"));
 // console.log(checkPassword("!#3"));
 // console.log(checkPassword("!!!!!!#3"));
-// console.log(checkPassword("bonjour")
+// console.log(checkPassword("bonjour"))
 
 
 

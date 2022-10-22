@@ -4,6 +4,7 @@ The checkPhoneNumber() function should accept phoneNumber as input and check if 
 
 The provided phoneNumber is a valid phoneNumber if its value matches with any of the pattern suggested below:
 
+pattern = ^[ ]*\+1[ ]*[\(]*[\d]{3}[ |\)|.|-]*[\d]{3}[ |\)|.|-]*[\d]{4}$
 
 +1 0999999999, 
 +1 099-999-9999, 
@@ -28,8 +29,18 @@ The provided phoneNumber is a valid phoneNumber if its value matches with any of
 
 */
 
-module.exports = function checkPhoneNumber() {
-
-  // Provide Solution Code Here
+module.exports = function checkPhoneNumber(phoneNumber) {
+  let pattern = new RegExp(/^[ ]*\+1[ ]*[\(]*[\d]{3}[ |\)|.|-]*[\d]{3}[ |\)|.|-]*[\d]{4}$/);
+  return pattern.test(phoneNumber);
 
 }
+
+// function checkPhoneNumber(phoneNumber) {
+//   let pattern = new RegExp(/^[ ]*\+1[ ]*[\(]*[\d]{3}[ |\)|.|-]*[\d]{3}[ |\)|.|-]*[\d]{4}$/);
+//   return pattern.test(phoneNumber);
+
+// }
+
+// console.log(checkPhoneNumber("1"));
+
+// console.log(checkPhoneNumber("+1 0999999999"));
