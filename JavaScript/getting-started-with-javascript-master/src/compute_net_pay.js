@@ -13,13 +13,11 @@ for any non-numeric value passed to the function.
 */
 
 module.exports = function calculateNetPayable(pricePerKilo, quantityInKilo, discountPercentage) {
-  console.log(typeof pricePerKilo, typeof quantityInKilo,typeof discountPercentage)
-  console.log((typeof pricePerKilo === Number) && (typeof quantityInKilo === Number) && (typeof discountPercentage === Number) )
-  if (typeof pricePerKilo === Number && typeof quantityInKilo === Number && typeof discountPercentage === Number ){
+    if (typeof pricePerKilo !== "number" || typeof quantityInKilo !== "number" || typeof discountPercentage !== "number" ){
     return "Invalid Input Types, All Inputs Should Be of Type Number !!"
   }
   else {
-    return (pricePerKilo * quantityInKilo) * discountPercentage
+    return ((pricePerKilo * quantityInKilo) - ((discountPercentage / 100)*(pricePerKilo * quantityInKilo))).toString()
   }
 }
 // function calculateNetPayable(pricePerKilo, quantityInKilo, discountPercentage) {

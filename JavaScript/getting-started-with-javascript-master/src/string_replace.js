@@ -13,6 +13,11 @@ for any non-numeric value passed to the function.
 
 module.exports = function replaceString(inputString, searchString, replaceWith) {
 
-  // Provide Solution Code Here
+  if(typeof inputString !== "string" || typeof searchString !== "string" || typeof replaceWith !== "string" ){
+    return "Invalid Input Types, All Inputs Should Be of Type String !!";
+  }
+  else {
+    return inputString.replace(searchString, replaceWith);
+  }
 
 }
