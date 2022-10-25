@@ -15,7 +15,10 @@ Use Regular Expression to perform validation check.
 */
 
 module.exports = function checkPassword(password) {
-  let exp = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{6,20})$");
+  if (password.length > 20){
+    return false
+  }
+  let exp = new RegExp(/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*]){8,20}/);
   return exp.test(password);
 }
 // function checkPassword(password) {
@@ -27,7 +30,7 @@ module.exports = function checkPassword(password) {
 // console.log(checkPassword("Bonjour!#3FDFFFFFFFFFFFFFFFFFFFFFFFFFF"));
 // console.log(checkPassword("!#3"));
 // console.log(checkPassword("!!!!!!#3"));
-// console.log(checkPassword("bonjour"))
+// console.log(checkPassword("P@$$w0rd"))
 
 
 
