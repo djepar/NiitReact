@@ -81,6 +81,10 @@ nav > picture {
     left: 50%;
     
 }
+main h2 {
+    font-size: 1.3rem;
+    color : #3dd3f9;
+}
 main  img {
     width : 5rem;
 }
@@ -94,12 +98,13 @@ main > article:nth-child(odd) > img {
     
 }
 article:nth-child(odd){
-   background-color: rgb(178, 178, 226);
+   background-color: #f3f3f7;
 }
 article {
-    background-color: rgb(82, 82, 66);
+    background-color: #ffffff;
+    padding : 4rem 25rem;
+    display : flexbox;
 }
-
 @media screen and (max-width : 597px) {
 }
 
