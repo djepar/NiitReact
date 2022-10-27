@@ -96,14 +96,34 @@ main > article:nth-child(even) > img {
 main > article:nth-child(odd) > img {
     float : right;
     
+    clear :both;
+}
+main > article:nth-child(odd)  {
+    float : left;
+    
+}
+main button {
+    border : #3177bc solid 1px;
+    background-color: transparent;
+    color : #3177bc;
+
 }
 article:nth-child(odd){
    background-color: #f3f3f7;
 }
 article {
+    overflow: auto;
     background-color: #ffffff;
     padding : 4rem 25rem;
-    display : flexbox;
+    display : flex;
+    justify-content: space-between;
+}
+#brands {
+    display:block;
+}
+#brands-img {
+    display : flex;
+    justify-content: space-between;
 }
 @media screen and (max-width : 597px) {
 }
