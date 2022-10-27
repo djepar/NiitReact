@@ -12,6 +12,8 @@ button {
     height: 40px;
     vertical-align: baseline;
     line-height: 10px;
+    font-weight: 600;
+    font-size: 1rem;
     margin : auto;
     border-style: none;
     text-align: center;
@@ -64,6 +66,7 @@ nav > picture {
     position: absolute;
     top: 35%;
     left: 50%;
+    background-color : white;
     transform : translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     padding : 4rem, 8rem, 4rem;
@@ -71,6 +74,10 @@ nav > picture {
 }
 #business {
     background-color: #08206a;
+    position :relative;
+}
+#business > div {
+    text-align: center;
 }
 #business p {
     font-size: 1.2rem;
@@ -78,30 +85,31 @@ nav > picture {
     padding : 2rem;
 }
 #business button {
-    left: 50%;
-    
+    background-color: #ffffff;
+    position : absolute;
 }
 main h2 {
     font-size: 1.3rem;
     color : #3dd3f9;
 }
 main  img {
-    width : 5rem;
+    width : 10rem;
 }
-main > article:nth-child(even) > img {
-    position:relative;
-    left: 0;
-    
+
+article {
+    overflow: auto;
+    background-color: #ffffff;
+    padding : 4rem 25rem;
+    display : flex;
+    justify-content: space-between;
 }
-main > article:nth-child(odd) > img {
-    float : right;
-    
-    clear :both;
+main > article:nth-child(odd) {
+    flex-direction: row-reverse;
 }
-main > article:nth-child(odd)  {
+/* main > article:nth-child(odd)  {
     float : left;
     
-}
+} */
 main button {
     border : #3177bc solid 1px;
     background-color: transparent;
@@ -111,19 +119,14 @@ main button {
 article:nth-child(odd){
    background-color: #f3f3f7;
 }
-article {
-    overflow: auto;
-    background-color: #ffffff;
-    padding : 4rem 25rem;
-    display : flex;
-    justify-content: space-between;
-}
+
 #brands {
     display:block;
+    text-align: center;
 }
 #brands-img {
     display : flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 @media screen and (max-width : 597px) {
 }
