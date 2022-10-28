@@ -21,8 +21,10 @@ button {
 
 nav {
     display : flex;
-    
+    padding-left : 12rem;
+    padding-right : 12rem;
     height : 10vh;
+    justify-content: space-around;
 }
 h2 {
     font-size: 3rem;
@@ -31,17 +33,17 @@ h2 {
 #logo {
     size: 100rem;
 }
-nav * {
-    display : inline-block;
+nav button {
+    padding : 1.0rem 0.2rem;
 }
 nav > ul > li {
     display : inline-block;
+    padding : 1.5rem 0.2rem;
 }
 nav > ul > li > a {
     text-decoration: none;
     color : black;
-    text-transform: uppercase;
-    padding : 2rem;
+    text-transform: uppercase;    
     
 }
 nav > picture {
