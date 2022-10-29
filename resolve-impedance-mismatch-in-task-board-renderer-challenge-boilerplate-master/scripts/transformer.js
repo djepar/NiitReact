@@ -16,11 +16,17 @@ DO NOT MODIFY THE CODE IN OTHER FILES AS IT WILL IMPACT THE TEST OUTCOME AND BRO
 
 */
 export const transform = (data) => {
-    if (typeof data !== object){
+    if (typeof data !== "object"){
         return "Invalid Input Type, Input Type Must Be An Object with Array Type Boards, Lists, Cards and Comments Properties !!"
+ } else {
+     const boardArray = data.reduce((boardArr, currentArr) => {
+         let tempBoard = boardArr.find(board => board.boardId)
+         console.log()
+     })
+
  }
 
-    
+
     // let premiumProducts = newProducts.filter(product => product.price > 300)
     // .map(product => {
     //     return {
