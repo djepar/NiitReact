@@ -2060,26 +2060,31 @@ const sample = {
 function transform(data) {
     if (typeof data !== "object"){
         return "Invalid Input Type, Input Type Must Be An Object with Array Type Boards, Lists, Cards and Comments Properties !!"
- } else {
-     const boardArray = data.reduce((boards, currentArr) => {
-         let tempBoard = boards.find(board => board.boardId === currentArr["boardId"])
-         if(tempBoard){
-            ++board
-         } else {
+    } else {
+     const boardFilter = data["boards"].reduce((boards, currentBoard) => {
+         let tempBoard = boards.find(board => 
+            board.boardId === currentBoard["boardId"]
+        )
+        if(!tempBoard){
             boards.push({
-                boardId : tempBoard["boardId"],
-                boardTitle : tempBoard["boardTitle"],
-                lists : tempBoard["lists"],
-                cards : tempBoard["cards"],
-                comments : tempBoard["comments"],
+                boardId : currentBoard["boardId"],
+                boardTitle : currentBoard["boardTitle"],
+                lists : currentBoard["lists"],
+                cards : currentBoard["cards"],
+                comments : currentBoard["comments"],
             })
-         }
-         return boards
-
-     }, [])
-
- }
- return boardArray
+       
+        }
+        return boards
+    }, [])
+    const AddingList = boardFilter["lists"].reduce((boards, currentArr) => {
+        let tempList = boards.find( list => 
+            list.boardId === currentArr)
+    })
+    return boardFilter
+}
 }
 
-transform(sample["boards"]);
+ 
+
+console.log(transform(sample));
