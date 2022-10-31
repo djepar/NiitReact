@@ -2058,32 +2058,54 @@ const sample = {
     ]
 }
 function transform(data) {
+    //Check if the input is valid
     if (typeof data !== "object"){
         return "Invalid Input Type, Input Type Must Be An Object with Array Type Boards, Lists, Cards and Comments Properties !!"
     } else {
+    // Filter the board 
      const boardFilter = data["boards"].reduce((boards, currentBoard) => {
          let tempBoard = boards.find(board => 
             board.boardId === currentBoard["boardId"]
         )
         if(!tempBoard){
+            const tempLists = data["lists"]
+            .filter(list => list["boardId"] === currentBoard["boardId"])
+            .map(list => {
+                const tempCards = data["cards"]
+                .filter(card => card["listId"] === list["listId"])
+                .map(card => {
+                    return {
+                        cardId : card["cardId"],
+                        cardTitle : card["cardTitle"]
+                    }
+                });
+                return {
+                    listId: list["listId"],
+                    listTitle: list["listTitle"],
+                    cards : tempCards
+                }
+            });
+            console.log(tempLists)
             boards.push({
                 boardId : currentBoard["boardId"],
                 boardTitle : currentBoard["boardTitle"],
-                lists : currentBoard["lists"],
-                cards : currentBoard["cards"],
+                lists : Object.assign({}, tempLists),
+               
                 comments : currentBoard["comments"],
             })
-       
+            console.log(boards)
         }
         return boards
     }, [])
-    const AddingList = boardFilter["lists"].reduce((boards, currentArr) => {
-        let tempList = boards.find( list => 
-            list.boardId === currentArr)
-    })
-    return boardFilter
+    
+    let finalData = {
+        boards : boardFilter
+    }
+    return finalData
 }
 }
+
+
 
  
 
