@@ -15,36 +15,58 @@ if the data is not an object and / or does not contain boards, lists, cards and 
 DO NOT MODIFY THE CODE IN OTHER FILES AS IT WILL IMPACT THE TEST OUTCOME AND BROWSER OUTPUT.
 
 */
-export const transform = (data) => {
+export const transform = (data) =>  {
+    //Check if the input is valid
     if (typeof data !== "object"){
         return "Invalid Input Type, Input Type Must Be An Object with Array Type Boards, Lists, Cards and Comments Properties !!"
- } else {
-     const boardArray = data.reduce((boardArr, currentArr) => {
-         let tempBoard = boardArr.find(board => board.boardId)
-         console.log()
-     })
+    } else {
+    // Filter the board 
+     const boardFilter = data["boards"].reduce((boards, currentBoard) => {
+         let tempBoard = boards.find(board => 
+            board.boardId === currentBoard["boardId"]
+        )
+        if(!tempBoard){
+            const tempLists = data["lists"]
+            .filter(list => list["boardId"] === currentBoard["boardId"])
+            .map(list => {
+                const tempCards = data["cards"]
+                .filter(card => card["listId"] === list["listId"])
+                .map(card => {
+                    const tempComment = data["comments"]
+                    .filter(comment => comment["cardId"]=== card["cardId"])
+                    .map(comment => {
+                        return {
+                            commentId : comment["commentId"],
+                            commentText : comment["commentText"]
+                        }
+                    }
 
- }
-
-
-    // let premiumProducts = newProducts.filter(product => product.price > 300)
-    // .map(product => {
-    //     return {
-    //         productName : product.productName.toUpperCase(),
-    //         price : product.price
-    //     }
-    // })
-    // .reduce((stocks, currentProduct)=>{
-    //     let stockItem = stocks.find(product => product.productName === currentProduct.productName);
-    //     if(stockItem){
-    //         ++stockItem.stock;
-    //     } else {
-    //         stocks.push({
-    //             productName : currentProduct.productName,
-    //             stock : 1
-    //         })
-    //     }
-    //     return stocks
-    // }, [])
-
-};
+                    )
+                    return {
+                        cardId : card["cardId"],
+                        cardTitle : card["cardTitle"],
+                        comments : tempComment
+                    }
+                });
+                return {
+                    listId: list["listId"],
+                    listTitle: list["listTitle"],
+                    cards : tempCards
+                }
+            });
+            boards.push({
+                boardId : currentBoard["boardId"],
+                boardTitle : currentBoard["boardTitle"],
+                lists : tempLists,
+            })
+        }
+        return boards
+    }, [])
+    
+    let finalData = {
+        boards : boardFilter
+    }
+    console.log(finalData)
+    return finalData
+}
+}

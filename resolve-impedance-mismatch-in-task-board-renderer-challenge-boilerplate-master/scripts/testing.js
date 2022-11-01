@@ -2063,7 +2063,7 @@ function transform(data) {
         return "Invalid Input Type, Input Type Must Be An Object with Array Type Boards, Lists, Cards and Comments Properties !!"
     } else {
     // Filter the board 
-     const boardFilter = data["boards"].reduce((boards, currentBoard) => {
+     const boardFilter = data.reduce((boards, currentBoard) => {
          let tempBoard = boards.find(board => 
             board.boardId === currentBoard["boardId"]
         )
@@ -2074,9 +2074,20 @@ function transform(data) {
                 const tempCards = data["cards"]
                 .filter(card => card["listId"] === list["listId"])
                 .map(card => {
+                    const tempComment = data["comments"]
+                    .filter(comment => comment["cardId"]=== card["cardId"])
+                    .map(comment => {
+                        return {
+                            commentId : comment["commentId"],
+                            commentText : comment["commentText"]
+                        }
+                    }
+
+                    )
                     return {
                         cardId : card["cardId"],
-                        cardTitle : card["cardTitle"]
+                        cardTitle : card["cardTitle"],
+                        comments : tempComment
                     }
                 });
                 return {
@@ -2085,15 +2096,11 @@ function transform(data) {
                     cards : tempCards
                 }
             });
-            console.log(tempLists)
             boards.push({
                 boardId : currentBoard["boardId"],
                 boardTitle : currentBoard["boardTitle"],
-                lists : Object.assign({}, tempLists),
-               
-                comments : currentBoard["comments"],
+                lists : tempLists,
             })
-            console.log(boards)
         }
         return boards
     }, [])
@@ -2101,12 +2108,9 @@ function transform(data) {
     let finalData = {
         boards : boardFilter
     }
+    console.log(finalData)
     return finalData
 }
 }
-
-
-
- 
-
-console.log(transform(sample));
+let superdata = transform(sample[0])
+console.log(superdata)
